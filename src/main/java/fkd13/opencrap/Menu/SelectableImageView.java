@@ -1,11 +1,9 @@
-package sample.Menu;
+package fkd13.opencrap.Menu;
 
+import fkd13.opencrap.GameBoard.Direction;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import sample.GameBoard.Direction;
-
-import java.util.MissingFormatArgumentException;
 
 public class SelectableImageView extends ImageView {
 

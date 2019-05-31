@@ -1,4 +1,4 @@
-package sample.GameBoard;
+package fkd13.opencrap.GameBoard;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -6,8 +6,8 @@ import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TransferMode;
-import sample.Menu.Manager;
-import sample.Menu.SelectableImageView;
+import fkd13.opencrap.Menu.Manager;
+import fkd13.opencrap.Menu.SelectableImageView;
 
 import java.lang.annotation.Target;
 

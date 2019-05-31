@@ -1,11 +1,11 @@
-package sample.Tracks;
+package fkd13.opencrap.Tracks;
 
 import javafx.scene.image.Image;
 import javafx.scene.input.DragEvent;
 import javafx.scene.layout.HBox;
-import sample.GameBoard.Direction;
-import sample.Menu.Manager;
-import sample.Menu.SelectableImageView;
+import fkd13.opencrap.GameBoard.Direction;
+import fkd13.opencrap.Menu.Manager;
+import fkd13.opencrap.Menu.SelectableImageView;
 
 import java.util.List;
 

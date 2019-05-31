@@ -1,4 +1,4 @@
-package sample.GameBoard;
+package fkd13.opencrap.GameBoard;
 
 import javafx.scene.image.Image;
 
