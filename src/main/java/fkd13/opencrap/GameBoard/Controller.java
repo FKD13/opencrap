@@ -1,9 +1,10 @@
-package sample.GameBoard;
+package fkd13.opencrap.GameBoard;
 
 import javafx.application.Platform;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
-import sample.Menu.Manager;
+import fkd13.opencrap.Menu.Manager;
 
 public class Controller {
 

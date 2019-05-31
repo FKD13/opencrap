@@ -15,6 +15,7 @@
             <Button fx:id="depotBtn" mnemonicParsing="false" text="Depot" />
             <Button fx:id="bombBtn" mnemonicParsing="false" text="Bomb" />
             <Button fx:id="stationBtn" mnemonicParsing="false" text="Station" />
-         </children></HBox>
+         </children>
+      </HBox>
    </center>
 </BorderPane>

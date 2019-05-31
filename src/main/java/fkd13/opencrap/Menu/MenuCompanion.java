@@ -1,11 +1,11 @@
-package sample.Menu;
+package fkd13.opencrap.Menu;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import sample.Tracks.TracksCompanion;
+import fkd13.opencrap.Tracks.TracksCompanion;
 
 import java.io.IOException;
 
@@ -24,16 +24,20 @@ public class MenuCompanion {
         this.manager = manager;
     }
 
+    @SuppressWarnings("unused")
     public void initialize() {
         trackBtn.setOnAction(e -> openTrackWindow());
         bombBtn.setOnAction(e -> manager.setSelectedImageView(new SelectableImageView(new Image(getClass().getResource("/Images/dirt.png").toString()), 0, manager, null, null)));
+        stationBtn.setDisable(true);
+        trainBtn.setDisable(true);
+        depotBtn.setDisable(true);
     }
 
     private void openTrackWindow() {
         if (trackStage == null) {
             try {
                 trackStage = new Stage();
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("Tracks.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Tracks.fxml"));
                 loader.setController(new TracksCompanion(manager));
                 Scene scene = new Scene(loader.load());
                 trackStage.setScene(scene);

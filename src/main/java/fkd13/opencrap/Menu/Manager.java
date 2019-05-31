@@ -1,6 +1,4 @@
-package sample.Menu;
-
-import javafx.scene.image.ImageView;
+package fkd13.opencrap.Menu;
 
 public class Manager {
 
