@@ -2,10 +2,11 @@ package fkd13.opencrap;
 
 import fkd13.opencrap.GameBoard.Controller;
 import fkd13.opencrap.Menu.Manager;
-import fkd13.opencrap.Menu.MenuCompanion;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 public class Main extends Application {
 
@@ -20,15 +21,19 @@ public class Main extends Application {
         Scene scene = new Scene(loader.load());
         primaryStage.setTitle("Openttd");
         primaryStage.setScene(scene);
-        primaryStage.show();
+        primaryStage.setFullScreen(true);
 
-        Stage stage = new Stage();
-        FXMLLoader loader2 = new FXMLLoader(getClass().getResource("/fxml/Menu.fxml"));
-        loader2.setController(new MenuCompanion(manager));
-        Scene scene2 = new Scene(loader2.load());
-        stage.setTitle("Menu");
-        stage.setScene(scene2);
-        stage.show();
+//        Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
+//        primaryStage.setX(primaryScreenBounds.getMinX());
+//        primaryStage.setY(primaryScreenBounds.getMinY());
+//
+//        primaryStage.setMaxWidth(primaryScreenBounds.getWidth());
+//        primaryStage.setMinWidth(primaryScreenBounds.getWidth());
+//
+//        primaryStage.setMaxHeight(primaryScreenBounds.getHeight());
+//        primaryStage.setMinHeight(primaryScreenBounds.getHeight());
+
+        primaryStage.show();
     }
 
 

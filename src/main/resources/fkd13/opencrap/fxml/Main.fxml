@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox fx:id="menu" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="trackBtn" mnemonicParsing="false" text="Tracks" />
+            <Button fx:id="trainBtn" mnemonicParsing="false" text="Train" />
+            <Button fx:id="depotBtn" mnemonicParsing="false" text="Depot" />
+            <Button fx:id="bombBtn" mnemonicParsing="false" text="Bomb" />
+            <Button fx:id="stationBtn" mnemonicParsing="false" text="Station" />
+         </children>
+      </HBox>
+   </top>
    <center>
-      <GridPane fx:id="gridpane" BorderPane.alignment="CENTER">
+      <GridPane fx:id="gridpane" style="-fx-border-color: blue; -fx-border-width: 3;" BorderPane.alignment="CENTER">
       </GridPane>
    </center>
+   <right>
+      <AnchorPane fx:id="rightPane" prefWidth="200.0"/>
+   </right>
    <bottom>
       <Button fx:id="move" mnemonicParsing="false" text="Move" BorderPane.alignment="CENTER" />
    </bottom>
